@@ -5,12 +5,11 @@ CONTEXT & TERMINOLOGY:
 
 Frequent pattern mining algorithms are designed to discover patterns, associations, correlations, or commonly occuring combinations among large data sets of items in transactional databases, relational databases, or other data repositories. These algorithms have become very important in data mining, finding considerable application in market basket analysis to identify products frequently appearing in the same transaction.
 
-In this assignment, we implement most commonly used frequent pattern mining algorithms - Apriori and FP-Growth and compare the results in terms of execution time and memory usage.
-
+In this assignment, we implement most commonly used frequent pattern mining algorithms - Apriori and Frequent Pattern Growth (FP-Growth) and compare the results in terms of execution time and memory usage.
+  
 Apriori Algorithm: This uses prior knowledge of frequent itemset properties. Frequent itemsets are items in a dataset that appear together in a certain frequency. This frequency of the items is termed as "Support". Support represents the number of times a certain item occurred throughout the entire dataset. For example, in the output if the support for a certain item is given as 0.03, it implies that the dataset comprises 3% of this particular item.
 
-Apriori Algorithm also returns apriori rules - which represents the popular combinations that frequently occurred together in the dataset. Suppose A->B is an apriori rule, 'A' in this relationship is called 
-'Antecedent' whereas 'B' is termed as 'Consequent'. For such rules, we measure the following metrics through this algorithm:
+Apriori Algorithm also returns apriori rules - which represents the popular combinations that frequently occurred together in the dataset. Suppose A->B is an apriori rule, 'A' in this relationship is called 'Antecedent' whereas 'B' is termed as 'Consequent'. For such rules, we measure the following metrics through this algorithm:
 
 a) Antecedent Support: The frequency of the combination of A,B occuring together is termed as 'Antecednt support'.
 
@@ -20,11 +19,12 @@ c) Conviction: Measured by the ratio of the number of occurrences of antecedents
 
 d) Zhangs_metric: This measures the strength of the relationship as well by evaluating the chances of occurrences of the consequent when the antecednet occurs and when it does not. This is calculated by dividing the probability of both the antecedent and consequent occurring together by the product of their individual probabilities,
 
-
 These metrics together help evalute the strength of apriori relationships, henceg giving meaningful interepretation from the datasets.
 
+FP-Growth Algorithm: While FP-Growth essentially returns the same results (support, leverage, conviction, zhang_metrics) and outputs are evaluated using the same metrics, the key  difference between these algorithms is the relative efficiency improvement in the FP-Growth algorithm. In the Apriori algorithm, the algorithm scans the entire database at each step to select the candidate sets, making it inefficient and signficantly slow. 
 
-FP-Growth Algorithm: 
+
+
 
 
 DATASETS:
