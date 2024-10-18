@@ -1,0 +1,88 @@
+
+--- Apriori Results ---
+Frequent Itemsets:
+     support                        itemsets
+0   0.039803                (tropical fruit)
+1   0.062899                        (yogurt)
+2   0.033743                        (coffee)
+3   0.140704                    (whole milk)
+4   0.030958                     (pip fruit)
+..       ...                             ...
+58  0.014578  (whole milk, other vegetables)
+59  0.015397        (rolls/buns, whole milk)
+60  0.017854              (soda, rolls/buns)
+61  0.013432           (sausage, rolls/buns)
+62  0.010811           (bottled water, soda)
+
+[63 rows x 2 columns]
+
+Association Rules:
+          antecedents         consequents  ...  conviction  zhangs_metric
+0        (whole milk)  (other vegetables)  ...    1.018553       0.186800
+1  (other vegetables)        (whole milk)  ...    1.032321       0.175808
+2              (soda)        (rolls/buns)  ...    1.017326       0.120847
+3        (rolls/buns)              (soda)  ...    1.017405       0.120779
+4           (sausage)        (rolls/buns)  ...    1.211882       0.575507
+5        (rolls/buns)           (sausage)  ...    1.065289       0.626854
+6     (bottled water)              (soda)  ...    1.042921       0.236862
+7              (soda)     (bottled water)  ...    1.020641       0.253166
+
+[8 rows x 10 columns]
+
+Execution Time: 0.14 seconds
+
+Memory Usage (Top 10):
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\linecache.py:139: size=19.1 KiB (+19.1 KiB), count=217 (+217), average=90 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\apriori.py:334: size=13.3 KiB (+13.3 KiB), count=63 (+63), average=216 B
+<frozen abc>:123: size=10.3 KiB (+10.3 KiB), count=66 (+66), average=159 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:192: size=3104 B (+3104 B), count=11 (+11), average=282 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:1392: size=2896 B (+2896 B), count=16 (+16), average=181 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py:2713: size=2344 B (+2344 B), count=42 (+42), average=56 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:171: size=1728 B (+1728 B), count=8 (+8), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:170: size=1728 B (+1728 B), count=8 (+8), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\construction.py:621: size=1280 B (+1280 B), count=16 (+16), average=80 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py:796: size=1232 B (+1232 B), count=5 (+5), average=246 B
+
+--- FP-Growth Results ---
+Frequent Itemsets:
+     support                        itemsets
+0   0.062899                        (yogurt)
+1   0.039803                (tropical fruit)
+2   0.033743                        (coffee)
+3   0.140704                    (whole milk)
+4   0.030958                     (pip fruit)
+..       ...                             ...
+58  0.014578  (whole milk, other vegetables)
+59  0.017854              (soda, rolls/buns)
+60  0.015397        (rolls/buns, whole milk)
+61  0.010811           (bottled water, soda)
+62  0.013432           (sausage, rolls/buns)
+
+[63 rows x 2 columns]
+
+Association Rules:
+          antecedents         consequents  ...  conviction  zhangs_metric
+0        (whole milk)  (other vegetables)  ...    1.018553       0.186800
+1  (other vegetables)        (whole milk)  ...    1.032321       0.175808
+2              (soda)        (rolls/buns)  ...    1.017326       0.120847
+3        (rolls/buns)              (soda)  ...    1.017405       0.120779
+4     (bottled water)              (soda)  ...    1.042921       0.236862
+5              (soda)     (bottled water)  ...    1.020641       0.253166
+6           (sausage)        (rolls/buns)  ...    1.211882       0.575507
+7        (rolls/buns)           (sausage)  ...    1.065289       0.626854
+
+[8 rows x 10 columns]
+
+Execution Time: 0.47 seconds
+
+Memory Usage (Top 10):
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:211: size=260 KiB (+260 KiB), count=5502 (+5502), average=48 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:239: size=194 KiB (+194 KiB), count=2756 (+2756), average=72 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:242: size=185 KiB (+185 KiB), count=913 (+913), average=208 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:57: size=64.3 KiB (+64.3 KiB), count=2745 (+2745), average=24 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:75: size=13.3 KiB (+13.3 KiB), count=63 (+63), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\tracemalloc.py:558: size=7144 B (+6792 B), count=128 (+122), average=56 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:340: size=0 B (-3752 B), count=0 (-67)
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:192: size=3856 B (+3728 B), count=28 (+25), average=138 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:1392: size=6432 B (+3536 B), count=42 (+26), average=153 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:247: size=3360 B (+3360 B), count=60 (+60), average=56 B

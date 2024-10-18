@@ -1,0 +1,97 @@
+
+--- Apriori Results ---
+Frequent Itemsets:
+       support                              itemsets
+0     0.160333                          (basketball)
+1     0.164967                            (football)
+2     0.103267                              (soccer)
+3     0.080067                            (softball)
+4     0.080300                          (volleyball)
+...        ...                                   ...
+1469  0.010100         (god, church, shopping, hair)
+1470  0.012333           (god, mall, shopping, hair)
+1471  0.010767        (god, clothes, shopping, hair)
+1472  0.011733       (mall, clothes, shopping, hair)
+1473  0.010567  (dance, cute, shopping, hair, music)
+
+[1474 rows x 2 columns]
+
+Association Rules:
+       antecedents                     consequents  ...  conviction  zhangs_metric
+0       (football)                    (basketball)  ...    1.289730       0.647326
+1     (basketball)                      (football)  ...    1.302793       0.643754
+2         (soccer)                    (basketball)  ...    1.168068       0.479208
+3     (basketball)                        (soccer)  ...    1.095021       0.511776
+4       (softball)                    (basketball)  ...    1.277314       0.578360
+...            ...                             ...  ...         ...            ...
+8821       (dance)   (cute, music, hair, shopping)  ...    1.027090       0.691009
+8822        (cute)  (music, hair, dance, shopping)  ...    1.030758       0.714946
+8823    (shopping)      (cute, music, dance, hair)  ...    1.021808       0.674943
+8824        (hair)  (cute, music, dance, shopping)  ...    1.029461       0.769000
+8825       (music)   (cute, hair, dance, shopping)  ...    1.009576       0.705621
+
+[8826 rows x 10 columns]
+
+Execution Time: 6.43 seconds
+
+Memory Usage (Top 10):
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:171: size=1862 KiB (+1862 KiB), count=8826 (+8826), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:170: size=1862 KiB (+1862 KiB), count=8826 (+8826), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\construction.py:621: size=552 KiB (+552 KiB), count=16 (+16), average=34.5 KiB
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\apriori.py:334: size=311 KiB (+311 KiB), count=1475 (+1475), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:2252: size=138 KiB (+138 KiB), count=2 (+2), average=69.0 KiB
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:209: size=106 KiB (+106 KiB), count=1930 (+1930), average=56 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\blocks.py:796: size=23.2 KiB (+23.2 KiB), count=5 (+5), average=4762 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\linecache.py:139: size=19.1 KiB (+19.1 KiB), count=217 (+217), average=90 B
+<frozen abc>:123: size=4647 B (+4647 B), count=62 (+62), average=75 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:199: size=4088 B (+4088 B), count=73 (+73), average=56 B
+
+--- FP-Growth Results ---
+Frequent Itemsets:
+       support                        itemsets
+0     0.220633                         (dance)
+1     0.443700                         (music)
+2     0.263200                           (god)
+3     0.224467                          (hair)
+4     0.205667                          (cute)
+...        ...                             ...
+1469  0.010967          (swimming, music, die)
+1470  0.015800     (swimming, music, football)
+1471  0.012000  (swimming, football, shopping)
+1472  0.011133       (swimming, music, sports)
+1473  0.013767         (swimming, music, band)
+
+[1474 rows x 2 columns]
+
+Association Rules:
+           antecedents        consequents  ...  conviction  zhangs_metric
+0              (music)            (dance)  ...    1.066093       0.322939
+1              (dance)            (music)  ...    1.211632       0.230509
+2              (dance)         (shopping)  ...    1.142655       0.343716
+3           (shopping)            (dance)  ...    1.115553       0.359283
+4              (dance)             (hair)  ...    1.184142       0.448439
+...                ...                ...  ...         ...            ...
+8821  (swimming, band)            (music)  ...    2.108678       0.404870
+8822     (music, band)         (swimming)  ...    1.061530       0.376730
+8823        (swimming)      (music, band)  ...    1.054662       0.380763
+8824           (music)   (swimming, band)  ...    1.012722       0.714180
+8825            (band)  (swimming, music)  ...    1.037936       0.429667
+
+[8826 rows x 10 columns]
+
+Execution Time: 3.53 seconds
+
+Memory Usage (Top 10):
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:242: size=5134 KiB (+5134 KiB), count=31323 (+31323), average=168 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:211: size=4535 KiB (+4535 KiB), count=96684 (+96684), average=48 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:239: size=3399 KiB (+3399 KiB), count=48345 (+48345), average=72 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:171: size=3723 KiB (+1862 KiB), count=17652 (+8826), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\association_rules.py:170: size=3723 KiB (+1862 KiB), count=17652 (+8826), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:57: size=956 KiB (+956 KiB), count=40779 (+40779), average=24 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\construction.py:621: size=1105 KiB (+552 KiB), count=32 (+16), average=34.5 KiB
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\mlxtend\frequent_patterns\fpcommon.py:75: size=311 KiB (+311 KiB), count=1475 (+1475), average=216 B
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\managers.py:2252: size=8725 KiB (+150 KiB), count=8 (+4), average=1091 KiB
+C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py:12683: size=11.6 KiB (+11.6 KiB), count=2 (+2), average=5944 B
+
+
+
